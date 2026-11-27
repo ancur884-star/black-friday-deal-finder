@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>DealHunt — Black Friday 2026 deals, checked today</title>
+<link rel="stylesheet" href="style.css">
+<script type="module" src="main.js"></script>
+</head>
+<body>
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="#/">DealHunt</a>
+    <p class="tagline">Black Friday 2026 &middot; 35 real deals, checked today</p>
+  </div>
+</header>
+
+<main>
+  <section class="stats" aria-label="Deal summary">
+    <span><strong>35</strong> deals</span>
+    <span><strong>6</strong> categories</span>
+    <span><strong>4</strong> stores</span>
+    <span><strong>14</strong> new lows</span>
+    <span class="stats-note">Prices checked 27 Nov 2026 &middot; prices change, so confirm at the store before you buy</span>
+  </section>
+
+  <section class="controls" aria-label="Search and filters">
+    <input id="search" type="search" placeholder="Search deals — try &quot;airpods&quot; or &quot;OLED&quot;" aria-label="Search deals">
+    <div id="category-chips" class="chips" aria-label="Filter by category"></div>
+    <div class="selects">
+      <label>Store
+        <select id="store-filter"></select>
+      </label>
+      <label>Discount
+        <select id="tier-filter"></select>
+      </label>
+      <label>Sort
+        <select id="sort"></select>
+      </label>
+    </div>
+  </section>
+
+  <section aria-label="All deals">
+    <h2>All deals <span id="count" class="count"></span></h2>
+    <div id="deals" class="grid"></div>
+  </section>
+
+  <section id="compare-section" aria-label="Same product, two stores">
+    <h2>Same product, two stores</h2>
+    <p class="section-note">Where two stores sell the identical item, the cheaper one wins — the saving is marked on the card.</p>
+    <div id="comparisons" class="comparisons"></div>
+  </section>
+</main>
+
+<footer>
+  <p>DealHunt lists Black Friday and Cyber Monday 2026 deals that were checked on 27 Nov 2026. Each card names its store and its source, and says whether the price is a new low, a strong price or a routine sale. Prices and stock change fast during the sale — always confirm the price at the store before you buy.</p>
+</footer>
+</body>
+</html>
